@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Salsa&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Roboto, sans-serif;
+  font-size: 1em;
+  color: black;
+  background: white;
+}
+
+header {
+  margin: 0 auto;
+  width: 500px;
+}
+
+h1 {
+  margin: 1rem;
+  font-size: 1.4rem;
+  color: darkred;
+  text-align: center;
+}
+
+form {
+  width: 450px;
+  margin: 0 auto;
+  padding: 1rem;
+  border: 2px solid rgba(0, 0, 0, 0.1);
+  border-radius: 0.5rem;
+  background-color: gainsboro;
+  display: grid;
+}
+
+label {
+  margin-top: 15px;
+}
+
+label,
+input,
+button,
+select,
+textarea {
+  font-family: Roboto, sans-serif;
+}
+
+input,
+select,
+textarea {
+  padding: 0.5rem;
+  font-size: 1.1rem;
+}
+
+button {
+  margin: 1rem;
+  width: 200px;
+  justify-self: center;
+  background-color: darkred;
+  color: #fff;
+  border: none;
+  border-radius: 0.5rem;
+  padding: 0.75rem;
+  font-size: 1.2rem;
+}
+
+button:hover {
+  background-color: darkslategrey;
+}
+
+footer {
+  margin: 1rem auto 0;
+  width: 400px;
+  text-align: center;
+  font-size: 0.8em;
+  color: gray;
+  border-top: 1px solid gainsboro;
+}
