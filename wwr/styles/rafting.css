@@ -51,10 +51,10 @@ h1 {
   position: absolute;
   top: 3rem;
   left: 250px;
-  color: var(--accent1-color);
+  font-family: var(--heading-font);
+  color: var(--primary-color);
 }
 
-h1,
 h2,
 h3,
 h4,
@@ -255,7 +255,11 @@ footer nav {
 
 .contact_us img {
   width: auto;
-  max-height: 560px;
+  max-height: 590px;
+}
+
+.checkbox {
+  margin-top: 10px;
 }
 
 .our_people {
@@ -294,4 +298,10 @@ footer nav {
 }
 .our_place p {
   margin-top: 20px;
+}
+
+.map iframe {
+  height: 400px;
+  width: 600px;
+  border: #144429 solid 2px;
 }
