@@ -92,6 +92,10 @@ nav a:hover {
   background-color: var(--nav-hover-background-color);
 }
 
+p {
+  padding: 5px 20px;
+}
+
 article {
   position: absolute;
   padding: 1rem;
@@ -113,7 +117,7 @@ figcaption {
 }
 
 form {
-  width: 450px;
+  max-width: 450px;
   margin: 0 auto;
   padding: 1rem;
   border: 2px solid rgba(0, 0, 0, 0.1);
@@ -124,6 +128,15 @@ form {
 
 fieldset {
   border: 0;
+  margin-top: 15px;
+  display: grid;
+  grid-template-rows: 0.1fr 0.9fr;
+  grid-template-columns: 0.1fr 0.9fr 0.1fr 0.9fr 0.1fr 0.9fr;
+}
+
+fieldset input,
+fieldset label {
+  grid-row: 2;
 }
 
 label {
@@ -131,10 +144,10 @@ label {
 }
 
 input,
-select,
 textarea {
   padding: 0.5rem;
   font-size: 1.1rem;
+  margin-right: 5px;
 }
 
 button {
@@ -202,10 +215,6 @@ footer nav {
   grid-column: 1/4;
 }
 
-.history-box p {
-  padding: 20px;
-}
-
 .history-box img {
   grid-column: 2/3;
   grid-row: 2/3;
@@ -233,4 +242,56 @@ footer nav {
   /* height: 150px; */
   padding: 20px 5px;
   aspect-ratio: 1;
+}
+
+.flex-container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.contact_us h2 {
+  margin-bottom: 30px;
+}
+
+.contact_us img {
+  width: auto;
+  max-height: 560px;
+}
+
+.our_people {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 50px 1fr 0.1fr 0.9fr;
+  justify-items: center;
+  text-align: justify;
+}
+
+.our_people img {
+  height: 150px;
+  width: auto;
+}
+
+.our_people h2 {
+  grid-column: 1/4;
+}
+
+.our_place {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: 80px auto;
+  justify-items: center;
+  align-items: center;
+  text-align: left;
+}
+
+.our_place h2 {
+  grid-column: 1/3;
+}
+
+.our_place h3 {
+  text-align: left;
+  padding-left: 20px;
+}
+.our_place p {
+  margin-top: 20px;
 }
