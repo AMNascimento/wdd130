@@ -112,6 +112,47 @@ figcaption {
   text-align: center;
 }
 
+form {
+  width: 450px;
+  margin: 0 auto;
+  padding: 1rem;
+  border: 2px solid rgba(0, 0, 0, 0.1);
+  border-radius: 0.5rem;
+  background-color: var(--secondary-color);
+  display: grid;
+}
+
+fieldset {
+  border: 0;
+}
+
+label {
+  margin: 15px 0 5px;
+}
+
+input,
+select,
+textarea {
+  padding: 0.5rem;
+  font-size: 1.1rem;
+}
+
+button {
+  margin: 1rem;
+  width: 200px;
+  justify-self: center;
+  background-color: var(--accent1-color);
+  color: var(--accent2-color);
+  border: none;
+  border-radius: 0.5rem;
+  padding: 0.75rem;
+  font-size: 1.2rem;
+}
+
+button:hover {
+  background-color: var(--primary-color);
+}
+
 footer {
   color: var(--nav-link-color);
   margin: 1rem auto;
